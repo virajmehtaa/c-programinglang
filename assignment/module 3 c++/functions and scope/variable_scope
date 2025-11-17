@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+
+int num = 22;
+
+void showGlobal()
+{
+    cout << "Global Variable (showglobal function):"<<num<<endl;
+}
+
+void showLocal()
+{
+    int num = 25;
+    cout << "Local Variable:"<<num<<endl;
+    cout << "To access global variable (showLocal function):"<<::num<<endl;
+}
+
+int main()
+{
+   cout << "Global Variable (int main function): "<<num<<endl;
+
+   showGlobal();
+   showLocal();
+   
+   return 0;
+}
