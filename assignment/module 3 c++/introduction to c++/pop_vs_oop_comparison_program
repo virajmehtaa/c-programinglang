@@ -1,0 +1,87 @@
+// approach : 1)procedural programming (POP) approach
+
+#include<iostream>
+using namespace std;
+
+float area(float length, float width)
+{
+    return length * width;
+}
+
+int main()
+{
+  float length, width;
+  
+  cout<<"Enter length: ";
+  cin>>length;
+  
+  cout<<"Enter width: ";
+  cin>>width;
+  
+  float result = area(length, width);
+  
+  cout<<"Area of rectangle = " << result << endl;
+  
+  
+  // Explanation of pop style
+  
+  cout<<"\nExplanation (POP Style) : \n" << "Uses functions and variables directly.\n"
+
+  <<"Focus is on steps and logic (procedures), not on data organization.\n" <<
+
+  "Data and functions are separate.\n" << endl;
+  
+  return 0;
+
+}
+
+
+
+// approach: 2)Object - oriented programming (OOP) approach
+
+#include <iostream>
+using namespace std;
+
+class Rectangle 
+{
+private:
+    float length, width;
+
+public:
+    void input() 
+    {
+        cout << "Enter length: ";
+        cin >> length;
+        
+        cout << "Enter width: ";
+        cin >> width;
+    }
+
+    float area() 
+    {
+        return length * width;
+    }
+
+    void display() 
+    {
+        cout << "Area of rectangle = " << area() << endl;
+    }
+};
+
+int main() 
+{
+    Rectangle rect;  // Object creation
+    rect.input();
+    rect.display();
+    
+    
+    // Explanation of oop style
+    
+    cout<<"\nExplanation (OOP Style): \n" << "\nUses class to combine data (length, width) and functions (input(), area(), display())." <<
+
+    "\nFocus is on objects that contain both data and behavior." <<
+
+    "\nPromotes encapsulation (data hiding)." << endl;
+
+    return 0;
+}
