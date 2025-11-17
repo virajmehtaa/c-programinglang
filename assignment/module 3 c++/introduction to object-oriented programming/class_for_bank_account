@@ -10,49 +10,49 @@ class BankAccount
 
         BankAccount(float initialBalance)
         {
-            if(initialBalance >= 0)
+            if(initialBalance >=0)
             {
                 balance = initialBalance;
             }
             else
             {
-                balance = 0;
+                balance=0;
             }
         }
 
         void deposit(float amount)
         {
-            if(amount > 0)
+            if(amount>0)
             {
                 balance += amount;
-                cout << "Deposit: " << amount << endl;
+                cout <<"Deposit:"<<amount<<endl;
             }
             else
             {
-                cout << "Invalid deposit amount!" << endl;    
+                cout <<"Invalid deposit amount!"<<endl;    
             }
         }
 
         void withdraw(float amount)
         {
-            if(amount > 0 && amount <= balance)
+            if(amount>0&&amount<=balance)
             {
                 balance -= amount;
-                cout << "Withdraw: " << amount << endl;
+                cout << "Withdraw:"<<amount<<endl;
             }
             else if(amount > balance)
             {
-                cout << "Insufficient balance!" << endl;
+                cout <<"Insufficient balance!"<<endl;
             }
             else
             {
-                cout << "Invalid withdrawal amount!" << endl;
+                cout <<"Invalid withdrawal amount!"<<endl;
             }
         }
 
         void checkBalance()
         {
-            cout << "Current Balance: " << balance << endl;
+            cout <<"Current Balance:"<<balance<<endl;
         }
 };
 
