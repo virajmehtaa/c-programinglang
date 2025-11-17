@@ -1,0 +1,33 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int intValue = 20;
+    double doubleValue;
+
+    doubleValue = intValue;
+    
+    cout<<"Implicit Type Conversion: "<<endl;
+    cout<<"Integer Value: "<<intValue<<endl;
+    cout<<"Converted to double: "<<doubleValue<<endl;
+
+    double num1 =7.98;
+    int num2;
+
+    num2 = (int) num1;
+    
+    cout<<"\nExplicit Type Conversion: "<<endl;
+    cout<<"Double Value: "<<num1<<endl;
+    cout<<"Converted to Integer: "<<num2<<endl;
+
+    int a = 3, b = 5;
+    double result;
+
+    result = (double)a/b;
+    
+    cout<<"\nExplicit Conversion in Expression: "<<endl;
+    cout<<"Result of (double)a/b: "<<result<<endl;
+
+    return 0;
+}
