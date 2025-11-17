@@ -1,0 +1,28 @@
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    const float PI = 3.14159;
+    
+    int age = 20;
+    float radius = 5.5;
+    char grade = 'A';
+    double salary = 25000.50;
+    bool ispass = true;
+
+    int nextYearAge = age + 1;
+    double area = PI * radius * radius;
+    double bonus = salary * 0.10;
+
+    cout<<"Constant PI = "<<PI<<endl;
+    cout<<"Age = "<<age<<endl;
+    cout<<"Next Year Age = "<<nextYearAge<<endl;
+    cout<<"Circle Area = "<<area<<endl;
+    cout<<"Grade = "<<grade<<endl;
+    cout<<"Salary = "<<salary<<endl;
+    cout<<"Bonus(10%) = "<<bonus<<endl;
+    cout<<"ispass = "<<ispass<<endl;
+    
+    return 0;
+}
